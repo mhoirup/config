@@ -1,0 +1,7 @@
+syntax match rREPLPrompt "^>"
+syntax match rREPLPromptContinued "^+"
+syntax match rREPLInput "\(^>\)\@<=.*"
+syntax match rREPLInput "\(^+\)\@<=.*"
+syntax match rREPLOutputNonText "^\s\=[0-9]\+"
+syntax match rREPLOutputNonText "^#.*"
+syntax match rREPLOutputNonText "<[a-z]\+>"
